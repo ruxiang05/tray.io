@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormComplete should render 1`] = `
+<div
+  className="form-complete"
+>
+  <svg
+    className="check-icon"
+  >
+    check-solid.svg
+  </svg>
+  <p>
+    Please verify your email address, you should have received an email from us already!
+  </p>
+</div>
+`;
