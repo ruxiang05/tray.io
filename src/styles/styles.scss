@@ -1,0 +1,80 @@
+// Theme
+$black: #000;
+$accent: #00a30a;
+$alert: #f00;
+$white: #fff;
+
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid $black;
+
+  form {
+    padding: 1rem;
+  }
+}
+
+.form-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: stretch;
+  list-style: none;
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+
+  li {
+    text-align: center;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid $black;
+  }
+  li:not(:last-child) {
+    border-right: 2px solid $black;
+  }
+
+  .selected-page {
+    border: none;
+  }
+}
+
+.form-input {
+  input {
+    width: 100%;
+    border: 2px solid $black;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  input[type="checkbox"] {
+    display: inline-block;
+  }
+
+  .required-mark {
+    color: $alert;
+  }
+}
+
+button {
+  color: $white;
+  background-color: $accent;
+  border: 2px solid $black;
+  float: right;
+}
+
+.form-complete {
+  text-align: center;
+  color: $accent;
+  svg {
+    width: 50px;
+  }
+}
+
+.form-error {
+  color: $alert;
+}
